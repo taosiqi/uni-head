@@ -1,0 +1,387 @@
+/*
+ * @Author: 陶思淇
+ * @Date: 2020-04-30 14:16:08
+ * @Last Modified by: 陶思淇
+ * @Last Modified time:2020-04-30 16:10:08
+ * flex布局+样式重置
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#app,
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'PingFang SC', "Helvetica Neue", Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
+}
+
+a {
+    text-decoration: none
+}
+
+.content-box {
+    position: absolute;
+    left: 250px;
+    right: 0;
+    top: 70px;
+    bottom: 0;
+    padding-bottom: 30px;
+    -webkit-transition: left .3s ease-in-out;
+    transition: left .3s ease-in-out;
+    background: #f0f0f0;
+}
+
+.content {
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.content-collapse {
+    left: 65px;
+}
+
+.container {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.crumbs {
+    margin: 10px 0;
+}
+
+.el-table th {
+    background-color: #f5f7fa !important;
+}
+
+.pagination {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.plugins-tips {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.el-button+.el-tooltip {
+    margin-left: 10px;
+}
+
+.el-table tr:hover {
+    background: #f6faff;
+}
+
+.mgb20 {
+    margin-bottom: 20px;
+}
+
+.move-enter-active,
+.move-leave-active {
+    transition: opacity .5s;
+}
+
+.move-enter,
+.move-leave {
+    opacity: 0;
+}
+
+
+/*BaseForm*/
+
+.form-box {
+    width: 600px;
+}
+
+.form-box .line {
+    text-align: center;
+}
+
+.el-time-panel__content::after,
+.el-time-panel__content::before {
+    margin-top: -7px;
+}
+
+.el-time-spinner__wrapper .el-scrollbar__wrap:not(.el-scrollbar__wrap--hidden-default) {
+    padding-bottom: 0;
+}
+
+
+/*Upload*/
+
+.pure-button {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.g-core-image-corp-container .info-aside {
+    height: 45px;
+}
+
+.el-upload--text {
+    background-color: #fff;
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 360px;
+    height: 180px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.el-upload--text .el-icon-upload {
+    font-size: 67px;
+    color: #97a8be;
+    margin: 40px 0 16px;
+    line-height: 50px;
+}
+
+.el-upload--text {
+    color: #97a8be;
+    font-size: 14px;
+    text-align: center;
+}
+
+.el-upload--text em {
+    font-style: normal;
+}
+
+
+/*VueEditor*/
+
+.ql-container {
+    min-height: 400px;
+}
+
+.ql-snow .ql-tooltip {
+    transform: translateX(117.5px) translateY(10px) !important;
+}
+
+.editor-btn {
+    margin-top: 20px;
+}
+
+
+/*markdown*/
+
+.v-note-wrapper .v-note-panel {
+    min-height: 500px;
+}
+
+
+/* box居中 */
+
+.ui-cell {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/* 布满剩下空间 */
+
+
+/* 让所有弹性盒模型对象的子元素都有相同的长度，且忽略它们内部的内容： */
+
+.ui-primary {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+
+/* 单个项目对齐方式 上对齐 */
+
+.ui-cell-lt {
+    -webkit-align-self: flex-start;
+    -moz-align-self: flex-start;
+    align-self: flex-start;
+}
+
+
+/* 两端对齐，项目之间的间隔都相等 */
+
+.ui-cell-sb {
+    justify-content: space-between;
+}
+
+
+/* 每个项目两侧的间隔相等 */
+
+.ui-cell-sa {
+    justify-content: space-around;
+}
+
+
+/* 居中 */
+
+.ui-cell-cn {
+    justify-content: center;
+}
+
+
+/* 右对齐 */
+
+.ui-cell-end {
+    justify-content: flex-end;
+}
+
+
+/* 主轴方向-列 */
+
+.ui-cell-cl {
+    flex-direction: column;
+}
+
+
+/* 主轴换行 两端对齐 */
+
+.ui-cell-hh {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* 文本向右对齐 交叉轴的中点对齐 */
+
+.ui-cell-ft {
+    text-align: right;
+    color: #aaa;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/* 主轴换行 */
+
+.ui-wrap {
+    flex-wrap: wrap;
+}
+
+
+/* 底部对齐 */
+
+.ui-cell-bt {
+    align-self: flex-end;
+}
+
+
+/* 元素不换行 超出隐藏 显示省略符号来代表被修剪的文本 */
+
+.ui-nowrap {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* 元素内容前后加上指定内容 清除浮动*/
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/* 文字截断 */
+
+.ui-nowrap,
+.ui-nowrap-flex,
+.ui-nowrap-2,
+.ui-nowrap-3,
+.ui-nowrap-6,
+.ui-nowrap-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* 规定段落中的文本不进行换行 */
+
+.ui-nowrap {
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+
+/* 平分父元素 */
+
+.ui-nowrap-flex,
+.ui-nowrap-2,
+.ui-nowrap-3,
+.ui-nowrap-6,
+.ui-nowrap-4 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+
+/* 多行文字溢出 省略 */
+
+.ui-nowrap-flex {
+    -webkit-line-clamp: 1;
+    -webkit-box-flex: 1;
+    height: inherit;
+}
+
+
+/*要截断的行数*/
+
+.ui-nowrap-2 {
+    -webkit-line-clamp: 2;
+}
+
+.ui-nowrap-3 {
+    -webkit-line-clamp: 3;
+}
+
+.ui-nowrap-4 {
+    -webkit-line-clamp: 4;
+}
+
+.ui-nowrap-6 {
+    -webkit-line-clamp: 6;
+}
+
+
+/* 图片宽高100% */
+
+.img_100 {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
