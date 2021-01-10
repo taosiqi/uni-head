@@ -11,7 +11,7 @@
     "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "element-ui": "^2.11.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "md5": "^2.2.1",
     "moment": "^2.25.3",
     "node-sass": "^4.14.1",
