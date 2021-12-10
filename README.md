@@ -2,7 +2,7 @@
 ## 声明
 > 主要是用来学习的，你要是能用到项目中去也行。注释写的比较清楚，想入门全栈的同学可以仔细研究，项目包括服务端，小程序端，后台管理端。项目开源,有啥bug提lssues。
 ## 演示
-个人无法发布此类小程序，可以看视频演示：[直达](https://static-1253419794.cos.ap-nanjing.myqcloud.com/qiniu/head.mp4?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDD6QasaO9e8u0Hac6m3kEKxf1FdVVsHTq%26q-sign-time%3D1637053504%3B1637057164%26q-key-time%3D1637053504%3B1637057164%26q-header-list%3Dhost%26q-url-param-list%3D%26q-signature%3Db4fb7d94ad91e280704739d6d8e44831303e70ab&x-cos-security-token=4f75f3feb746b4e76b6898142511c3f5ce856e9a10001)
+个人无法发布此类小程序，可以看视频演示：[直达](https://static-1253419794.cos.ap-nanjing.myqcloud.com/qiniu/head.mp4)
 ## 技术栈
 1. 后台管理（admin文件夹）：vue
 2. 小程序端（avatar-uniapp文件夹）：uniapp
