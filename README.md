@@ -4,7 +4,7 @@
 ### 声明
 主要是用来学习的，当然，你也可以使用它来发布你自己的小程序，不用担心版权问题。
 ### 演示
-点击[这里](https://static-1253419794.cos.ap-nanjing.myqcloud.com/qiniu/head.mp4)可以查看演示视频。
+点击[这里](https://static-1253419794.cos.ap-nanjing.myqcloud.com/qiniu/heads.mp4)可以查看演示视频。
 ### 技术栈
 1. 后台管理（admin文件夹）：vue
 2. 小程序端（avatar-uniapp文件夹）：uniapp
